@@ -54,12 +54,42 @@ header {
   text-align: center;
 }
 
+/* Page contact */
+form,
+#faq,
+#informations {
+  background-color: #f2ede6;
+  margin: 10px;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+#faq p,
+#informations p {
+  padding-top: 10px;
+}
+
+button {
+  display: block;
+  background-color: #b48841;
+  color: #fff;
+  border-radius: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100px;
+}
+
 footer {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #b48841;
-  color: #FFF;
+  color: #fff;
   padding: 20px;
 }
-
