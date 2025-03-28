@@ -7,8 +7,18 @@ header {
   padding: 20px;
 }
 
-section#nouveautes {
-  background-image: url("assets/img/homme.png");
+#nouveautes {
+  /* background-image: url("assets/img/homme.png"); */
+  background-color: #000;
+  color: #FFF;
+}
+
+#cadeaux {
+  background-color: #f4f0eb;
+}
+
+.button {
+  border: solid 1px #FFF;
 }
 
 footer {
