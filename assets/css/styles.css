@@ -50,9 +50,23 @@ header {
   padding: 10px;
 }
 
+.articles img {
+  width: 300px;
+}
+
 .articles div a {
   text-align: center;
 }
+
+/* Page article */
+#article {
+  display: flex;
+}
+
+#article div {
+  width: 50%;
+}
+
 
 /* Page contact */
 form,
