@@ -2,23 +2,55 @@ body {
   margin: auto;
 }
 
+/* HEADER */
 header {
-  background-color: #000;
+  display: flex;
+  align-items:baseline;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: black;
   padding: 20px;
 }
 
-header a {
-  text-decoration: none;
-  color: #fff;
+#logo {
+  width: 200px;
+  height: auto;
 }
 
+header nav {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 10px
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header search {
+  border-bottom: solid 1px #b48841;
+}
+
+header search input {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.header-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* MAIN */
 #nouveautes {
   background-image: url("../img/homme.png");
-  color: #fff;
+  color: white;
 }
 
 #nouveautes .button {
-  border: solid 1px #fff;
+  border: solid 1px white;
   padding: 5px;
 }
 
@@ -97,7 +129,7 @@ form div {
 button {
   display: block;
   background-color: #b48841;
-  color: #fff;
+  color: white;
   border-radius: 30px;
   margin: 10px auto;
   padding: 10px;
@@ -113,7 +145,7 @@ footer {
   /* vertical-align:middle; */
   flex-wrap: wrap;
   background-color: #b48841;
-  color: #fff;
+  color: white;
   padding: 20px;
   gap: 10px;
 }
@@ -128,7 +160,7 @@ footer a {
 }
 
 footer img {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
