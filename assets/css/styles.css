@@ -1,10 +1,15 @@
-* {
-  margin: 0;
+body {
+  margin: auto;
 }
 
 header {
   background-color: #000;
   padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #nouveautes {
@@ -51,7 +56,8 @@ header {
 }
 
 .articles img {
-  width: 300px;
+  width: 25%;
+  height: auto;
 }
 
 .articles div a {
@@ -66,7 +72,6 @@ header {
 #article div {
   width: 50%;
 }
-
 
 /* Page contact */
 form,
@@ -99,11 +104,31 @@ button {
   width: 100px;
 }
 
+
+/* FOOTER */
 footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  /* vertical-align:middle; */
   flex-wrap: wrap;
   background-color: #b48841;
   color: #fff;
   padding: 20px;
+  gap: 10px;
 }
+
+footer a {
+  /* border: solid 1px; */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 2px;
+}
+
+footer img {
+  width: 32px;
+  height: 32px;
+}
+
