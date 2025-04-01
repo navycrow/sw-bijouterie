@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <img src="assets/img/logo.png" alt="logo" id="logo" />
-      <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="femme.html">FEMME</a>
-        <a href="homme.html">HOMME</a>
-      </nav>
-      <search>
-        <input type="text" name="search" id="" placeholder="Recherche" />
-        <img src="assets/img/loupe.svg" alt="recherche" />
-      </search>
-      <!-- Actions des icônes à définir -->
-      <div class="header-icon">
-        <img src="assets/img/coeur.svg" alt="favori" />
-        <img src="assets/img/panier.svg" alt="panier" />
-        <img src="assets/img/profil.svg" alt="profil" />
-      </div>
-    </header>
-    <main>
-      <section id="nouveautes">
-        <h1>Les nouveautés</h1>
-        <p>
-          Le printemps est arrivé!<br />La nouvelle collection est disponible.
-        </p>
-        <a href="nouveautes.html" class="button">Découvrir</a>
-      </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accueil</title>
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <img src="assets/img/logo.png" alt="logo" id="logo" />
 
-      <section id="cadeaux">
-        <div>
-          <h2>Offrir un bijou</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi iste
-            ex, earum eum, placeat, id eveniet reprehenderit temporibus harum
-            unde provident sequi minima ipsum facilis aliquam. Nihil laborum
-            laudantium odio. Sunt ipsam vero consectetur et ea modi voluptatem
-            reprehenderit aperiam adipisci amet ratione rerum quisquam, nesciunt
-            veritatis atque architecto molestias accusantium sit, voluptates eum
-            necessitatibus. Nam officia ut unde earum. Aliquid optio aut neque,
-            soluta commodi odio consequatur non a officiis praesentium excepturi
-            aliquam quas delectus qui omnis in eum assumenda exercitationem?
-            Quae, impedit molestias ratione inventore incidunt natus minima.
-          </p>
-          <a href="cadeaux.html" class="button">Cadeaux</a>
-        </div>
-        <img src="assets/img/bijoux_or.png" alt="" />
-      </section>
-    </main>
-    <footer>
-      <a id="boutiques" href="nos-boutiques.html">
-        <img src="assets/img/localisation.svg" alt="localisation" />
-        Nos boutiques
-      </a>
-      <a id="reseaux-sociaux" href="https://www.instagram.com/glowely">
-        <img src="assets/img/instagram.png" alt="instagram" />
-        Suivez-nous !
-      </a>
-      <a id="contact" href="contact.html">
-        <img src="assets/img/contact.svg" alt="contact" />
-        Contact
-      </a>
-    </footer>
-  </body>
+            <!-- Barre de navigation -->
+            <nav>
+                <a href="index.html">ACCUEIL</a>
+                <a href="femme.html">FEMME</a>
+                <a href="homme.html">HOMME</a>
+            </nav>
+
+            <!-- Zone recherche -->
+            <search>
+                <input
+                    type="text"
+                    name="search"
+                    id=""
+                    placeholder="Recherche"
+                />
+                <img src="assets/img/loupe.svg" alt="recherche" />
+            </search>
+
+            <!-- Actions des icônes à définir -->
+            <div class="header-icons">
+                <img src="assets/img/coeur.svg" alt="favori" />
+                <img src="assets/img/panier.svg" alt="panier" />
+                <img src="assets/img/profil.svg" alt="profil" />
+            </div>
+        </header>
+        <main>
+            <section id="nouveautes">
+                <h1>Les nouveautés</h1>
+                <p>
+                    Le printemps est arrivé!<br />La nouvelle collection est
+                    disponible.
+                </p>
+                <a href="nouveautes.html" class="button">Découvrir</a>
+            </section>
+
+            <section id="cadeaux">
+                <div>
+                    <h2>Offrir un bijou</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Animi iste ex, earum eum, placeat, id eveniet
+                        reprehenderit temporibus harum unde provident sequi
+                        minima ipsum facilis aliquam. Nihil laborum laudantium
+                        odio. Sunt ipsam vero consectetur et ea modi voluptatem
+                        reprehenderit aperiam adipisci amet ratione rerum
+                        quisquam, nesciunt veritatis atque architecto molestias
+                        accusantium sit, voluptates eum necessitatibus. Nam
+                        officia ut unde earum. Aliquid optio aut neque, soluta
+                        commodi odio consequatur non a officiis praesentium
+                        excepturi aliquam quas delectus qui omnis in eum
+                        assumenda exercitationem? Quae, impedit molestias
+                        ratione inventore incidunt natus minima.
+                    </p>
+                    <a href="cadeaux.html" class="button">Cadeaux</a>
+                </div>
+                <img src="assets/img/bijoux_or.png" alt="bijoux en or" />
+            </section>
+        </main>
+        <footer>
+            <a id="boutiques" href="nos-boutiques.html">
+                <img src="assets/img/localisation.svg" alt="localisation" />
+                Nos boutiques
+            </a>
+            <a id="reseaux-sociaux" href="https://www.instagram.com/glowely">
+                <img src="assets/img/instagram.png" alt="instagram" />
+                Suivez-nous !
+            </a>
+            <a id="contact" href="contact.html">
+                <img src="assets/img/contact.svg" alt="contact" />
+                Contact
+            </a>
+        </footer>
+    </body>
 </html>
