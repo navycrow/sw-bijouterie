@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: auto;
 }
@@ -56,14 +60,19 @@ header search input {
 }
 
 /* MAIN */
+
 /* Section nouveautés page accueil */
 #nouveautes {
     background-image: url("../img/homme.png");
     background-size: cover;
     background-position: center;
-    height:45vmax; /* Adapte l'image à 45% de la plus grande des dimensions (largeur/hauteur) */
+    height: 45vmax; /* Adapte l'image à 45% de la plus grande des dimensions (largeur/hauteur) */
     color: white;
-    padding: 10px
+    padding: 10px;
+}
+
+#nouveautes p {
+    width: 45%;
 }
 
 #nouveautes .button {
@@ -74,23 +83,47 @@ header search input {
 
 /* Section Cadeaux page accueil */
 #cadeaux {
-    display: flex;
-    background-color: #f4f0eb;
-    color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "texte image"
+        "texte image";
 }
 
-#cadeaux div {
-    width: 70%;
+#cadeaux-txt {
+    min-width: 370px;
+    grid-area: texte;
+    background-color: #f4f0eb;
+    color: black;
     padding: 10px;
 }
 
-#cadeaux .button {
+#cadeaux-txt .button {
     border: solid 1px black;
     padding: 5px;
     color: black;
 }
 
+#cadeaux-img {
+    grid-area: image;   
+}
 
+@media screen and (max-width: 850px) {
+    #cadeaux {
+        grid-template-areas:
+            "texte texte"
+            "image image";
+    }
+
+    #cadeaux-txt {
+        min-width: 100%;
+    }
+
+    #cadeaux-img img {
+        width: 100%;
+    }
+}
 
 /* Bannières */
 #banniere img {
