@@ -40,9 +40,11 @@ nav ul li {
 }
 
 nav a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
     color: white;
 }
-
 
 
 /* ============================================================= */
