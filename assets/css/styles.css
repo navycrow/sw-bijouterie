@@ -8,7 +8,11 @@ body {
 }
 
 a {
-    text-decoration: none; /* pas soulignage */
+    text-decoration: none; /* pas soulignage des liens */
+}
+
+h1 {
+    font-size: 2em;
 }
 
 /* HEADER */
@@ -19,21 +23,28 @@ header {
     gap: 10px;
     background-color: black;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
 }
 
 #logo {
-    width: auto;
-    height: 50px;
+    height: 100%;
 }
 
-/* Navigation */
-header nav {
-    display: flex;
-    /* justify-content: space-around; */
-    gap: 10px;
+/* Barres de navigation */
+nav ul {
+    list-style-type: none; /* pas de puces */
+    margin: auto;
+    padding: 0;
 }
 
-header nav a {
+nav ul li {
+    display: inline; /* en ligne */
+}
+
+nav a {
     color: white;
 }
 
@@ -58,7 +69,7 @@ header search input {
     gap: 10px;
 }
 
-#menu-icon {
+.menu {
     display: none;
 }
 
@@ -67,17 +78,26 @@ header search input {
     height: 24px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     header nav {
         display: none;
     }
 
-    #menu-icon {
+    .menu {
         display: inline;
+    }
+
+    #menu-icon:checked + header nav {
+        display: block;
+        position: absolute;
+        width: 200px;
     }
 }
 
 /* MAIN */
+main {
+    margin-top: 70px; /* espace pour le header */
+}
 
 /* Section nouveautés page accueil */
 #nouveautes {
