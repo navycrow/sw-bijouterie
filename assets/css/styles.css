@@ -1,3 +1,4 @@
+/* Réglages par défaut */
 * {
     box-sizing: border-box;
 }
@@ -7,13 +8,42 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Format des ancres */
 a {
-    text-decoration: none; /* pas soulignage des liens */
+    text-decoration: none;
 }
 
+/* Format titre principal */
 h1 {
     font-size: 2em;
 }
+
+/* Taille des icônes */
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Barres de navigation */
+nav ul {
+    list-style-type: none; /* pas de puces */
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline; /* en ligne */
+}
+
+nav a {
+    color: white;
+}
+
+/* ============================================================= */
 
 /* HEADER */
 header {
@@ -31,21 +61,6 @@ header {
 
 #logo {
     height: 100%;
-}
-
-/* Barres de navigation */
-nav ul {
-    list-style-type: none; /* pas de puces */
-    margin: auto;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline; /* en ligne */
-}
-
-nav a {
-    color: white;
 }
 
 /* Zone de rechercche */
@@ -73,11 +88,6 @@ header search input {
     display: none;
 }
 
-.header-icons img {
-    width: 24px;
-    height: 24px;
-}
-
 @media screen and (max-width: 650px) {
     header nav {
         display: none;
@@ -87,7 +97,7 @@ header search input {
         display: inline;
     }
 
-    #menu-icon:checked + header nav {
+    #menu-icon:checked+header nav {
         display: block;
         position: absolute;
         width: 200px;
@@ -96,7 +106,8 @@ header search input {
 
 /* MAIN */
 main {
-    margin-top: 70px; /* espace pour le header */
+    margin-top: 70px;
+    /* espace pour le header */
 }
 
 /* Section nouveautés page accueil */
@@ -104,7 +115,8 @@ main {
     background-image: url("../img/homme.png");
     background-size: cover;
     background-position: center;
-    height: 45vmax; /* Adapte l'image à 45% de la plus grande des dimensions (largeur/hauteur) */
+    height: 45vmax;
+    /* Adapte l'image à 45% de la plus grande des dimensions (largeur/hauteur) */
     color: white;
     padding: 10px;
 }
@@ -167,6 +179,7 @@ main {
 #banniere img {
     width: 100%;
 }
+
 #banniere h1 {
     text-align: center;
 }
@@ -237,26 +250,6 @@ button {
 
 /* FOOTER */
 footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* vertical-align:middle; */
-    flex-wrap: wrap;
     background-color: #b48841;
-    color: white;
     padding: 10px;
-    gap: 10px;
-}
-
-footer a {
-    /* border: solid 1px; */
-    display: flex;
-    align-items: center;
-    color: white;
-    gap: 2px;
-}
-
-footer img {
-    width: 24px;
-    height: 24px;
 }
