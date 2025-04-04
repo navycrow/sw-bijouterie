@@ -7,37 +7,48 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-        <!-- Header -->
-        <header>
-          <!-- Logo -->
-          <img src="assets/img/logo.png" alt="logo" id="logo" />
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <img src="assets/img/logo.png" alt="logo" id="logo" />
 
-          <!-- Barre de navigation -->
-          <nav>
-              <a href="index.html">ACCUEIL</a>
-              <a href="femme.html">FEMME</a>
-              <a href="homme.html">HOMME</a>
-          </nav>
+      <!-- Barre de navigation principale -->
+      <nav id="header-nav">
+          <ul>
+              <li><a href="index.html">ACCUEIL</a></li>
+              <li><a href="femme.html">FEMME</a></li>
+              <li><a href="homme.html">HOMME</a></li>
+          </ul>
+      </nav>
 
-          <!-- Zone recherche -->
-          <search>
-              <input
-                  type="text"
-                  name="search"
-                  id=""
-                  placeholder="Recherche"
-              />
-              <img src="assets/img/loupe.svg" alt="recherche" />
-          </search>
+      <!-- Zone recherche -->
+      <search>
+          <input type="text" name="search" id="" placeholder="Recherche" />
+          <img src="assets/img/loupe.svg" alt="recherche" />
+      </search>
 
-          <!-- Actions des icônes à définir -->
-          <div class="header-icons">
-              <img class="icon" src="assets/img/coeur.svg" alt="favori" />
-              <img class="icon" src="assets/img/panier.svg" alt="panier" />
-              <img class="icon" src="assets/img/profil.svg" alt="profil" />
-              <img class="icon" id="menu-icon" src="assets/img/menu.svg" alt="menu" />
+      <!-- Actions des icônes à définir -->
+      <div class="header-icons">
+          <img class="icon" src="assets/img/coeur.svg" alt="favori" />
+          <img class="icon" src="assets/img/panier.svg" alt="panier" />
+          <img class="icon" src="assets/img/profil.svg" alt="profil" />
+
+          <!-- Menu burger -->
+          <div class="nav-menu">
+              <label class="nav-menu" for="menu-icon"><img class="icon" src="assets/img/menu.svg" alt="menu" /></label>
+              <input class="nav-menu" type="checkbox" id="menu-icon" />
+              <nav id="dropdown-nav">
+                  <ul>
+                      <li><a href="index.html">ACCUEIL</a></li>
+                      <li><a href="femme.html">FEMME</a></li>
+                      <li><a href="homme.html">HOMME</a></li>
+                  </ul>
+              </nav>                
           </div>
-      </header>
+
+          <!-- <img class="icon" id="menu-icon" src="assets/img/menu.svg" alt="menu" /> -->
+      </div>
+  </header>
 
 
     <main>

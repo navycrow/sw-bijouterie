@@ -15,7 +15,7 @@
         <img src="assets/img/logo.png" alt="logo" id="logo" />
 
         <!-- Barre de navigation principale -->
-        <nav>
+        <nav id="header-nav">
             <ul>
                 <li><a href="index.html">ACCUEIL</a></li>
                 <li><a href="femme.html">FEMME</a></li>
@@ -36,9 +36,16 @@
             <img class="icon" src="assets/img/profil.svg" alt="profil" />
 
             <!-- Menu burger -->
-            <div class="menu">
-                <label class="menu" for="menu-icon">☰</label>
-                <input class="menu" type="checkbox" id="menu-icon" hidden />
+            <div class="nav-menu">
+                <label class="nav-menu" for="menu-icon"><img class="icon" src="assets/img/menu.svg" alt="menu" /></label>
+                <input class="nav-menu" type="checkbox" id="menu-icon" />
+                <nav id="dropdown-nav">
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="femme.html">FEMME</a></li>
+                        <li><a href="homme.html">HOMME</a></li>
+                    </ul>
+                </nav>                
             </div>
 
             <!-- <img class="icon" id="menu-icon" src="assets/img/menu.svg" alt="menu" /> -->

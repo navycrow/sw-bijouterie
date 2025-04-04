@@ -43,6 +43,8 @@ nav a {
     color: white;
 }
 
+
+
 /* ============================================================= */
 
 /* HEADER */
@@ -84,23 +86,41 @@ header search input {
     gap: 10px;
 }
 
-.menu {
+.nav-menu {
     display: none;
 }
 
+/* Dropdown menu */
+#dropdown-nav {
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 150px;
+}
+
+#dropdown-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+}
+
 @media screen and (max-width: 650px) {
-    header nav {
+    #header-nav {
         display: none;
     }
 
-    .menu {
+    .nav-menu{
         display: inline;
     }
 
-    #menu-icon:checked+header nav {
+    .nav-menu input, #dropdown-nav { /* la checkbox reste masquée */
+        display: none;
+    }
+
+    #menu-icon:checked + #dropdown-nav { /* affiche le menu lorsque l'icône est cliquée */
         display: block;
-        position: absolute;
-        width: 200px;
     }
 }
 
