@@ -47,7 +47,7 @@ nav a {
 }
 
 
-/* ============================================================= */
+/* ========================================================================= */
 
 /* HEADER */
 header {
@@ -82,17 +82,17 @@ header search input {
     border: none;
 }
 
-/* Icônes */
+/* Barre d'icônes */
 .header-icons {
     display: flex;
     gap: 10px;
 }
 
 .nav-menu {
-    display: none;
+    display: none; /* bouton menu masqué par défaut */
 }
 
-/* Dropdown menu */
+/* Menu de navigation déroulant */
 #dropdown-nav {
     background-color: black;
     position: absolute;
@@ -126,13 +126,25 @@ header search input {
     }
 }
 
+
 /* MAIN */
 main {
     margin-top: 70px;
     /* espace pour le header */
 }
 
-/* Section nouveautés page accueil */
+
+/* FOOTER */
+footer {
+    background-color: #b48841;
+    padding: 10px;
+}
+
+/* ========================================================================= */
+
+/* PAGE ACCUEIL */
+
+/* Section nouveautés */
 #nouveautes {
     background-image: url("../img/homme.png");
     background-size: cover;
@@ -153,7 +165,8 @@ main {
     color: white;
 }
 
-/* Section Cadeaux page accueil */
+
+/* Section Cadeaux */
 #cadeaux {
     display: grid;
     grid-template-columns: auto auto;
@@ -181,7 +194,7 @@ main {
     grid-area: image;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) { /* bascule l'image en dessous du texte */
     #cadeaux {
         grid-template-areas:
             "texte texte"
@@ -197,6 +210,10 @@ main {
     }
 }
 
+/* ========================================================================= */
+
+/* PAGE HOMME / FEMME */
+
 /* Bannières */
 #banniere img {
     width: 100%;
@@ -209,20 +226,19 @@ main {
 /* Sections articles */
 .articles h2 {
     text-align: center;
-    z-index: 1;
 }
 
 .articles div {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     border: solid 1px black;
     padding: 10px;
 }
 
 .articles img {
-    width: 25%;
+    width: 150px;
     height: auto;
 }
 
@@ -230,16 +246,48 @@ main {
     text-align: center;
 }
 
-/* Page article */
+/* ======================================================================== */
+
+/* PAGE PRODUIT */
 #article {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "image texte"
+        "image texte";
+}
+
+#article-img {
+    grid-area: image;
     display: flex;
+    justify-content: center;
 }
 
-#article div {
-    width: 50%;
+#article-desc {
+    grid-area: texte;
+    padding: 10px;
 }
 
-/* Page contact */
+@media screen and (max-width: 750px) { /* bascule l'image en dessous du texte */
+    #article {
+        grid-template-areas:
+            "image image"
+            "texte texte";
+    }
+
+    #article-txt {
+        min-width: 100%;
+    }
+
+    #article-img {
+        width: 100%;
+    }
+}
+
+/* ======================================================================== */
+
+/* PAGE CONTACT */
 form,
 #faq,
 #informations {
@@ -270,8 +318,3 @@ button {
     width: 100px;
 }
 
-/* FOOTER */
-footer {
-    background-color: #b48841;
-    padding: 10px;
-}
