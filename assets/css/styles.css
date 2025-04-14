@@ -288,28 +288,50 @@ footer {
 /* ======================================================================== */
 
 /* PAGE CONTACT */
-form,
-#faq,
-#informations {
-    background-color: #f2ede6;
-    margin: 10px;
-    border-radius: 30px;
-    padding: 30px;
+#page-contact { /* version mobile */
+    display: grid;
+    grid-template-areas:
+    "form"
+    "faq"
+    "informations";
 }
 
-form div {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+form {
+    grid-area: form;
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "titre"
+    "nom"
+    "prenom"
+    "email"
+    "message"
+    "bouton";
 }
 
-#faq p,
-#informations p {
-    padding-top: 10px;
+#page-contact h1 {
+    grid-area: titre;
 }
 
-button {
-    display: block;
+#nom {
+    grid-area: nom;
+}
+
+#prenom {
+    grid-area: prenom;
+}
+
+#email {
+    grid-area: email;
+}
+
+#message {
+    grid-area: message;
+}
+
+#page-contact button {
+    grid-area: bouton;
     background-color: #b48841;
     color: white;
     border-radius: 30px;
@@ -318,3 +340,56 @@ button {
     width: 100px;
 }
 
+
+#page-contact div {
+    padding-top: 10px;
+}
+
+#page-contact label { /* saut de ligne après étiquette */
+    display: block;
+}
+
+#page-contact input,
+#page-contact textarea {
+    width: 100%;
+}
+
+#faq {
+    grid-area: faq;
+}
+
+#informations {
+    grid-area: informations;
+}
+
+#page-contact form,
+#faq,
+#informations {
+    background-color: #f2ede6;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#faq p,
+#informations p {
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 576px) { /* version desktop */
+    #page-contact {
+        grid-template-columns: 55% 45%;
+        grid-template-areas:
+        "form form"
+        "faq informations";
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "titre titre titre"
+        "nom prenom email"
+        "message message message"
+        "bouton bouton bouton";
+    }
+}
