@@ -88,12 +88,12 @@ header search input {
     gap: 10px;
 }
 
-.nav-menu {
+#menu-icon {
     display: none; /* bouton menu masqué par défaut */
 }
 
 /* Menu de navigation déroulant */
-#dropdown-nav {
+/* #dropdown-nav {
     background-color: black;
     position: absolute;
     top: 70px;
@@ -106,26 +106,33 @@ header search input {
     flex-direction: column;
     align-content: center;
     padding: 10px;
-}
+} */
 
-@media screen and (max-width: 650px) {
-    #header-nav {
+@media screen and (max-width: 650px) { /* version mobile */
+    #header-nav { /* Déplacement menu sous l'icône burger */
         display: none;
+        background-color: black;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 150px;
     }
 
-    .nav-menu{
-        display: inline;
+    #header-nav ul { /* Passage en menu vertical */
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 10px;
     }
 
-    .nav-menu input, #dropdown-nav { /* la checkbox reste masquée */
-        display: none;
-    }
-
-    #menu-icon:checked + #dropdown-nav { /* affiche le menu lorsque l'icône est cliquée */
+    #header-nav.visible { /* Affichage lors du clic sur le menu (js) */
         display: block;
     }
-}
 
+    #menu-icon {
+        display: inline; /* affichage du menu burger */
+    }
+}  
 
 /* MAIN */
 main {
