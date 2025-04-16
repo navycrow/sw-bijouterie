@@ -131,6 +131,7 @@ header search input {
 
     #menu-icon {
         display: inline; /* affichage du menu burger */
+        cursor: pointer;
     }
 }  
 
