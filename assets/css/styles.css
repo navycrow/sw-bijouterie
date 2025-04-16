@@ -63,7 +63,8 @@ header {
     height: 70px;
 }
 
-#logo {
+/* logo */
+#logo, #logo img {
     height: 100%;
 }
 
