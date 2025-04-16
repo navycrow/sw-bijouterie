@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produit</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
     <!-- Header -->
     <header>
-      <!-- Logo -->
-      <img src="assets/img/logo.png" alt="logo" id="logo" />
+        <!-- Logo -->
+        <img src="assets/img/logo.png" alt="logo" id="logo" />
 
-      <!-- Barre de navigation principale -->
-      <nav id="header-nav">
-          <ul>
-              <li><a href="index.html">ACCUEIL</a></li>
-              <li><a href="femme.html">FEMME</a></li>
-              <li><a href="homme.html">HOMME</a></li>
-          </ul>
-      </nav>
+        <!-- Barre de navigation principale -->
+        <nav id="header-nav">
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="femme.html">FEMME</a></li>
+                <li><a href="homme.html">HOMME</a></li>
+            </ul>
+        </nav>
 
-      <!-- Zone recherche -->
-      <search>
-          <input type="text" name="search" id="" placeholder="Recherche" />
-          <img src="assets/img/loupe.svg" alt="recherche" />
-      </search>
+        <!-- Zone recherche -->
+        <search>
+            <input type="text" name="search" id="" placeholder="Recherche" />
+            <img src="assets/img/loupe.svg" alt="recherche" />
+        </search>
 
-      <!-- Actions des icônes à définir -->
-      <div class="header-icons">
-          <img class="icon" src="assets/img/coeur.svg" alt="favori" />
-          <img class="icon" src="assets/img/panier.svg" alt="panier" />
-          <img class="icon" src="assets/img/profil.svg" alt="profil" />
+        <!-- Actions des icônes à définir -->
+        <div class="header-icons">
+            <img class="icon" src="assets/img/coeur.svg" alt="favori" />
+            <img class="icon" src="assets/img/panier.svg" alt="panier" />
+            <img class="icon" src="assets/img/profil.svg" alt="profil" />
+            <img id="menu-icon" class="icon" src="assets/img/menu.svg" alt="menu" onclick="toggleMenu()" />
 
-          <!-- Menu burger -->
-          <div class="nav-menu">
-              <label class="nav-menu" for="menu-icon"><img class="icon" src="assets/img/menu.svg" alt="menu" /></label>
-              <input class="nav-menu" type="checkbox" id="menu-icon" />
-              <nav id="dropdown-nav">
-                  <ul>
-                      <li><a href="index.html">ACCUEIL</a></li>
-                      <li><a href="femme.html">FEMME</a></li>
-                      <li><a href="homme.html">HOMME</a></li>
-                  </ul>
-              </nav>                
-          </div>
+            <!-- Menu burger -->
+            <!-- <div class="nav-menu">
+                <label class="nav-menu" for="menu-icon"><img class="icon" src="assets/img/menu.svg" alt="menu" /></label>
+                <input class="nav-menu" type="checkbox" id="menu-icon" /> -->
+                <!-- <nav id="dropdown-nav">
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="femme.html">FEMME</a></li>
+                        <li><a href="homme.html">HOMME</a></li>
+                    </ul>
+                </nav>                 -->
+            <!-- </div> -->
 
-          <!-- <img class="icon" id="menu-icon" src="assets/img/menu.svg" alt="menu" /> -->
-      </div>
-  </header>
+            <!-- <img class="icon" id="menu-icon" src="assets/img/menu.svg" alt="menu" /> -->
+        </div>
+    </header>
 
     <main>
       <!-- Détail d'un article-->
