@@ -247,8 +247,8 @@ footer {
 }
 
 .articles img {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 150px;
 }
 
 .articles div a {

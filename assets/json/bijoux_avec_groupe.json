@@ -1,0 +1,802 @@
+[
+  {
+    "nom": "Collier Classique",
+    "prix": 46.04,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 98.56,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Vintage",
+    "prix": 217.89,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Montre Élégante",
+    "prix": 79.3,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Montre Vintage",
+    "prix": 55.61,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Montre Design",
+    "prix": 165.99,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 100.42,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 160.73,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Cuir",
+    "prix": 160.06,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Argent",
+    "prix": 171.27,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Argent",
+    "prix": 33.18,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Créoles Dorées",
+    "prix": 200.87,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Moderne",
+    "prix": 205.66,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Élégante",
+    "prix": 85.21,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Montre Acier",
+    "prix": 197.58,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Boucles Perles",
+    "prix": 124.18,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 98.8,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Perle",
+    "prix": 57.22,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Cuir",
+    "prix": 26.41,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Design",
+    "prix": 133.95,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Collier Classique",
+    "prix": 74.36,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Saphir",
+    "prix": 84.55,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Design",
+    "prix": 93.96,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Créoles Dorées",
+    "prix": 142.28,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 183.66,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Acier",
+    "prix": 183.83,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Bague Vintage",
+    "prix": 66.76,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 97.87,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Acier",
+    "prix": 187.3,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Collier Classique",
+    "prix": 112.12,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Moderne",
+    "prix": 27.29,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Boucles Perles",
+    "prix": 98.06,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Argent",
+    "prix": 165.54,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Perlé",
+    "prix": 201.04,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Boucles Perles",
+    "prix": 33.38,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Créoles Dorées",
+    "prix": 142.79,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 172.55,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Boucles Perles",
+    "prix": 43.94,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Vintage",
+    "prix": 147.01,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Argent",
+    "prix": 72.98,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Vintage",
+    "prix": 98.31,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Anneaux Minimalistes",
+    "prix": 85.34,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Vintage",
+    "prix": 20.71,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Élégance",
+    "prix": 112.53,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Anneaux Minimalistes",
+    "prix": 43.81,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Argent",
+    "prix": 164.11,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Moderne",
+    "prix": 90.26,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Orné",
+    "prix": 83.43,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Acier",
+    "prix": 212.84,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 48.14,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Perle",
+    "prix": 102.52,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Saphir",
+    "prix": 196.96,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Diamant",
+    "prix": 212.0,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Anneaux Minimalistes",
+    "prix": 144.78,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Orné",
+    "prix": 122.47,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Perlé",
+    "prix": 83.61,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Perle",
+    "prix": 54.93,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Orné",
+    "prix": 158.9,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Vintage",
+    "prix": 161.62,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Bague Moderne",
+    "prix": 153.65,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Vintage",
+    "prix": 125.12,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Collier Élégance",
+    "prix": 104.25,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Élégance",
+    "prix": 28.87,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Moderne",
+    "prix": 39.83,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 88.39,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Cuir",
+    "prix": 99.81,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Boucles Perles",
+    "prix": 154.63,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Vintage",
+    "prix": 184.91,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Vintage",
+    "prix": 22.13,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Classique",
+    "prix": 159.62,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Design",
+    "prix": 218.11,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 127.44,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 205.97,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Élégante",
+    "prix": 124.42,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 117.24,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Diamant",
+    "prix": 54.11,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Diamant",
+    "prix": 28.45,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Cuir",
+    "prix": 136.12,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Boucles Perles",
+    "prix": 176.38,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 120.59,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Perlé",
+    "prix": 40.91,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Acier",
+    "prix": 59.77,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Montre",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Bague Diamant",
+    "prix": 81.0,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Créoles Dorées",
+    "prix": 188.84,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Créoles Dorées",
+    "prix": 191.55,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Cuir",
+    "prix": 89.05,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Saphir",
+    "prix": 152.57,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Élégante",
+    "prix": 146.61,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Montre",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Montre Vintage",
+    "prix": 35.1,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Montre",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Montre Design",
+    "prix": 66.48,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Montre",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 188.81,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Collier Perle",
+    "prix": 195.66,
+    "photo": "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Collier",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bague Saphir",
+    "prix": 131.59,
+    "photo": "https://images.pexels.com/photos/1456617/pexels-photo-1456617.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bague",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Boucles Perles",
+    "prix": 175.15,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 157.7,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Montre Vintage",
+    "prix": 75.36,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "descriptif": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Montre",
+    "groupe": "BIJOUX POUR HOMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 182.12,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 178.5,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Bracelet Perlé",
+    "prix": 184.54,
+    "photo": "https://images.pexels.com/photos/1395302/pexels-photo-1395302.jpeg",
+    "descriptif": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelet",
+    "groupe": "BIJOUX POUR FEMMES"
+  },
+  {
+    "nom": "Créoles Dorées",
+    "prix": 167.43,
+    "photo": "https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg",
+    "descriptif": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES"
+  }
+]
