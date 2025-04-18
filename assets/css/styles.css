@@ -3,6 +3,21 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+    --header-bg-color: black;
+    --header-txt-color: white;
+
+    --footer-bg-color: #b48841;
+    --footer-txt-color: white;
+
+    --btn-bg-color: #b48841;
+
+    --form-section-bg-color: #f2ede6;  /* formulaire et sections */
+    --form-section-txt-color: black;
+}
+
+/* Corps */
 body {
     margin: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -43,7 +58,7 @@ nav a {
     display: flex;
     gap: 5px;
     align-items: center;
-    color: white;
+    color: var(--header-txt-color);
 }
 
 
@@ -55,7 +70,7 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     gap: 10px;
-    background-color: black;
+    background-color: var(--header-bg-color);
     padding: 10px;
     position: fixed;
     top: 0;
@@ -78,8 +93,8 @@ header search {
 
 header search input {
     width: 80%;
-    background-color: black;
-    color: white;
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
     border: none;
 }
 
@@ -94,26 +109,11 @@ header search input {
     display: none; /* bouton menu masqué par défaut */
 }
 
-/* Menu de navigation déroulant */
-/* #dropdown-nav {
-    background-color: black;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 150px;
-}
-
-#dropdown-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 10px;
-} */
 
 @media screen and (max-width: 650px) { /* version mobile */
     #header-nav { /* Déplacement menu sous l'icône burger */
         display: none;
-        background-color: black;
+        background-color: var(--header-bg-color);
         position: absolute;
         top: 70px;
         right: 0;
@@ -145,7 +145,7 @@ main {
 
 /* FOOTER */
 footer {
-    background-color: #b48841;
+    background-color: var(--footer-bg-color);
     padding: 10px;
 }
 
@@ -188,15 +188,15 @@ footer {
 #cadeaux-txt {
     min-width: 370px;
     grid-area: texte;
-    background-color: #f4f0eb;
-    color: black;
+    background-color: var(--form-section-bg-color);
+    color: var(--form-section-txt-color);
     padding: 10px;
 }
 
 #cadeaux-txt .button {
-    border: solid 1px black;
+    color: var(--form-section-txt-color);
+    border: solid 1px;
     padding: 5px;
-    color: black;
 }
 
 #cadeaux-img {
@@ -341,7 +341,7 @@ form {
 
 #page-contact button {
     grid-area: bouton;
-    background-color: #b48841;
+    background-color: var(--btn-bg-color);
     color: white;
     border-radius: 30px;
     margin: 10px auto;
@@ -374,7 +374,8 @@ form {
 #page-contact form,
 #faq,
 #informations {
-    background-color: #f2ede6;
+    background-color: var(--form-section-bg-color);
+    color: var(--form-section-txt-color);
     margin: 10px;
     border-radius: 30px;
     padding: 30px;

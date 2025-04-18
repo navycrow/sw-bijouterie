@@ -31,11 +31,12 @@ function remplirPageArticles() {  // HOMMES et FEMMES
         // Ajout des articles de la catégorie correspondante à la section dans la div
         const div = section.querySelector('div')
         articlesGroupe.filter(article => article.categorie === categorie).forEach(article => {
-            div.innerHTML += `<a href="produit.html?id=${article.id}">
+            div.innerHTML += `
+            <a href="produit.html?id=${article.id}">
                 <img src="${article.photo}" alt="${article.nom}" />
                 <p>${article.nom} €</p>
                 <p>${article.prix} €</p>
-              </a>`
+            </a>`
         })
     })
 }
@@ -48,23 +49,30 @@ function remplirPageProduit(id) {
 
     const sectionArticle = document.getElementById('article')
     sectionArticle.innerHTML = `
-            <div id="article-img">
-          <img  src="${article.photo}" alt="${article.alt}" />
+        <div id="article-img">
+            <img  src="${article.photo}" alt="${article.alt}" />
         </div>
         <div id="article-desc">
-          <a href="javascript:history.back()">RETOUR</a>
-          <h2>${article.nom}</h2>
-          <p id="prix">${article.prix} €</p>
-          <p id="descriptif">
-          ${article.descriptif}
-          </p>
-          <button>AJOUTER AU PANIER</button>
-          <section>DESCRIPTION</section>
-          <section>CONSEILS</section>
-          <section>ENTRETIEN</section>
+            <a href="javascript:history.back()">RETOUR</a>
+            <h2>${article.nom}</h2>
+            <p id="prix">${article.prix} €</p>
+            <p id="resume">${article.resume}</p>
+            <button onclick="ajouterPanier(${id})">AJOUTER AU PANIER</button>
+            <section>DESCRIPTION
+                <p>${article.description}</p>
+            </section>
+            <section>CONSEILS
+                <p>${article.conseils}</p>
+            </section>
+            <section>SERVICE-APRES-VENTE
+                <p>${article.sav}</p>
+            </section>
         </div>`
 }
 
+function ajouterPanier(id) {
+    alert ('Votre article a bien été ajouté') // Message provisoire
+}
 
 // ============================================================================
 
@@ -72,14 +80,14 @@ function remplirPageProduit(id) {
 const url = new URL(window.location)  // https://developer.mozilla.org/en-US/docs/Web/API/URL_API
 console.log(url)
 
-// Si page produit, récupère l'id
+// Si page produit, récupère l'id et remplit la page
 if (url.pathname === '/produit.html') {
     const articleId = url.searchParams.get('id')  // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
     console.log(url.pathname, `id=${articleId}`)
     remplirPageProduit(articleId)
 }
 
-// Si page homme ou femme
+// Si page homme ou femme, remplit la page avec les articles associés
 else if (url.pathname === '/femme.html' || url.pathname === '/homme.html') {
     console.log(url.pathname)
     remplirPageArticles()

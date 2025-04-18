@@ -1,398 +1,536 @@
 const articles = [
-    {
-      "nom": "Collier Classique",
-      "prix": 46.04,
-      "photo": "assets/img/collier_1.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Colliers",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 1
-    },
-    {
-      "nom": "Bracelet Charme",
-      "prix": 98.56,
-      "photo": "assets/img/bracelet_1.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Bracelets",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 2
-    },
-    {
-      "nom": "Pendentif Vintage",
-      "prix": 217.89,
-      "photo": "assets/img/pendentif_1.png",
-      "descriptif": "Idéal pour offrir ou se faire plaisir.",
-      "categorie": "Pendentifs",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 3
-    },
-    {
-      "nom": "Pendentif tribal",
-      "prix": 79.3,
-      "photo": "assets/img/pendentif_2.png",
-      "descriptif": "Idéal pour offrir ou se faire plaisir.",
-      "categorie": "Pendentifs",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 4
-    },
-    {
-      "nom": "Pendentif argent",
-      "prix": 55.61,
-      "photo": "assets/img/pendentif_3.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Pendentifs",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 5
-    },
-    {
-      "nom": "Pendentif Design",
-      "prix": 165.99,
-      "photo": "assets/img/pendentif_4.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Pendentifs",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 6
-    },
-    {
-      "nom": "Pendantes Cristal",
-      "prix": 100.42,
-      "photo": "assets/img/boucles_oreilles_3.png",
-      "descriptif": "Alliance parfaite entre tradition et modernité.",
-      "categorie": "Boucles d'oreilles",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 7
-    },
-    {
-      "nom": "Pendantes Cristal",
-      "prix": 160.73,
-      "photo": "assets/img/boucles_oreilles_4.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Boucles d'oreilles",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 8
-    },
-    {
-      "nom": "Bracelet Cuir",
-      "prix": 160.06,
-      "photo": "assets/img/bracelet_2.png",
-      "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
-      "categorie": "Bracelets",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 9
-    },
-    {
-      "nom": "Bracelet Argent",
-      "prix": 171.27,
-      "photo": "assets/img/bracelet_3.png",
-      "descriptif": "Alliance parfaite entre tradition et modernité.",
-      "categorie": "Bracelets",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 10
-    },
-    {
-      "nom": "Bracelet Argent",
-      "prix": 33.18,
-      "photo": "assets/img/bracelet_4.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Bracelets",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 11
-    },
-    {
-      "nom": "Créoles Dorées",
-      "prix": 200.87,
-      "photo": "assets/img/boucles_oreilles_5.png",
-      "descriptif": "Alliance parfaite entre tradition et modernité.",
-      "categorie": "Boucles d'oreilles",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 12
-    },
-    {
-      "nom": "Bague Moderne",
-      "prix": 205.66,
-      "photo": "assets/img/bague_1.png",
-      "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 13
-    },
-    {
-      "nom": "Pendentif Élégant",
-      "prix": 85.21,
-      "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Pendentifs",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 14
-    },
-    {
-      "nom": "Bague Acier",
-      "prix": 197.58,
-      "photo": "assets/img/bague_2.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 15
-    },
-    {
-      "nom": "Boucles Perles",
-      "prix": 124.18,
-      "photo": "assets/img/boucles_oreilles_6.png",
-      "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
-      "categorie": "Boucles d'oreilles",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 16
-    },
-    {
-      "nom": "Bracelet Charme",
-      "prix": 98.8,
-      "photo": "assets/img/bracelet_5.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Bracelets",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 17
-    },
-    {
-      "nom": "Collier Perle",
-      "prix": 57.22,
-      "photo": "assets/img/collier_2.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Colliers",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 18
-    },
-    {
-      "nom": "Bracelet Cuir",
-      "prix": 26.41,
-      "photo": "assets/img/bracelet_6.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Bracelets",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 19
-    },
-    {
-      "nom": "Bague Design",
-      "prix": 133.95,
-      "photo": "assets/img/bague_3.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 20
-    },
-    {
-      "nom": "Collier Classique",
-      "prix": 74.36,
-      "photo": "assets/img/collier_3.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Colliers",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 21
-    },
-    {
-      "nom": "Bague Saphir",
-      "prix": 84.55,
-      "photo": "assets/img/bague_4.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 22
-    },
-    {
-      "nom": "Bague Design",
-      "prix": 93.96,
-      "photo": "assets/img/bague_5.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 23
-    },
-    {
-      "nom": "Créoles Dorées",
-      "prix": 142.28,
-      "photo": "assets/img/boucles_oreilles_1.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Boucles d'oreilles",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 24
-    },
-    {
-      "nom": "Bague Acier",
-      "prix": 183.83,
-      "photo": "assets/img/bague_6.png",
-      "descriptif": "Alliance parfaite entre tradition et modernité.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 26
-    },
-    {
-      "nom": "Bague Vintage",
-      "prix": 66.76,
-      "photo": "assets/img/bague_7.png",
-      "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 27
-    },
-    {
-      "nom": "Pendantes Cristal",
-      "prix": 97.87,
-      "photo": "assets/img/boucles_oreilles_2.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Boucles d'oreilles",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 28
-    },
-    {
-      "nom": "Chaine Acier",
-      "prix": 187.3,
-      "photo": "assets/img/chaine_1.png",
-      "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
-      "categorie": "Chaines homme",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 29
-    },
-    {
-      "nom": "Collier Classique",
-      "prix": 112.12,
-      "photo": "assets/img/collier_4.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Colliers",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 30
-    },
-    {
-      "nom": "Bague Moderne",
-      "prix": 27.29,
-      "photo": "assets/img/bague_8.png",
-      "descriptif": "Idéal pour offrir ou se faire plaisir.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 31
-    },
-    {
-      "nom": "Bague Vintage",
-      "prix": 147.01,
-      "photo": "assets/img/bague_9.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 39
-    },
-    {
-      "nom": "Chaine Vintage",
-      "prix": 98.31,
-      "photo": "assets/img/chaine_2.png",
-      "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
-      "categorie": "Chaines homme",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 41
-    },
-    {
-      "nom": "Bague Vintage",
-      "prix": 20.71,
-      "photo": "assets/img/bague_10.png",
-      "descriptif": "Alliance parfaite entre tradition et modernité.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 43
-    },
-    {
-      "nom": "Collier Élégance",
-      "prix": 112.53,
-      "photo": "assets/img/collier_5.png",
-      "descriptif": "Alliance parfaite entre tradition et modernité.",
-      "categorie": "Colliers",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 44
-    },
-    {
-      "nom": "Chaine Acier",
-      "prix": 212.84,
-      "photo": "assets/img/chaine_3.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Chaines homme",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 49
-    },
-    {
-      "nom": "Chaine Vintage",
-      "prix": 161.62,
-      "photo": "assets/img/chaine_4.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Chaines homme",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 59
-    },
-    {
-      "nom": "Chaine Vintage",
-      "prix": 125.12,
-      "photo": "assets/img/chaine_5.png",
-      "descriptif": "Idéal pour offrir ou se faire plaisir.",
-      "categorie": "Chaines homme",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 61
-    },
-    {
-      "nom": "Chaine Design",
-      "prix": 218.11,
-      "photo": "assets/img/chaine_6.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Chaines homme",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 71
-    },
-    {
-      "nom": "Bague Élégante",
-      "prix": 124.42,
-      "photo": "assets/img/bague_11.png",
-      "descriptif": "Conçu avec des matériaux de qualité pour une élégance durable.",
-      "categorie": "Bagues",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 74
-    },
-    {
-      "nom": "Montre Acier",
-      "prix": 59.77,
-      "photo": "assets/img/montre_1.png",
-      "descriptif": "Alliance parfaite entre tradition et modernité.",
-      "categorie": "Montres",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 82
-    },
-    {
-      "nom": "Montre Élégante",
-      "prix": 146.61,
-      "photo": "assets/img/montre_2.png",
-      "descriptif": "Un bijou raffiné pour sublimer toutes vos tenues.",
-      "categorie": "Montres",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 88
-    },
-    {
-      "nom": "Montre Vintage",
-      "prix": 35.1,
-      "photo": "assets/img/montre_3.png",
-      "descriptif": "Un design intemporel qui traverse les modes.",
-      "categorie": "Montres",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 89
-    },
-    {
-      "nom": "Montre Design",
-      "prix": 66.48,
-      "photo": "assets/img/montre_4.png",
-      "descriptif": "Alliance parfaite entre tradition et modernité.",
-      "categorie": "Montres",
-      "groupe": "BIJOUX POUR HOMMES",
-      "id": 90
-    },
-    {
-      "nom": "Collier Perle",
-      "prix": 195.66,
-      "photo": "assets/img/collier_6.png",
-      "descriptif": "Idéal pour offrir ou se faire plaisir.",
-      "categorie": "Colliers",
-      "groupe": "BIJOUX POUR FEMMES",
-      "id": 92
-    },
-  ]
+  {
+    "nom": "Collier Classique",
+    "prix": 46.04,
+    "photo": "assets/img/collier_1.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Colliers",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 1,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 98.56,
+    "photo": "assets/img/bracelet_1.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Bracelets",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 2,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Pendentif Vintage",
+    "prix": 217.89,
+    "photo": "assets/img/pendentif_1.png",
+    "resume": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 3,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Pendentif tribal",
+    "prix": 79.3,
+    "photo": "assets/img/pendentif_2.png",
+    "resume": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 4,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Pendentif argent",
+    "prix": 55.61,
+    "photo": "assets/img/pendentif_3.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 5,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Pendentif Design",
+    "prix": 165.99,
+    "photo": "assets/img/pendentif_4.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 6,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 100.42,
+    "photo": "assets/img/boucles_oreilles_3.png",
+    "resume": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 7,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 160.73,
+    "photo": "assets/img/boucles_oreilles_4.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 8,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bracelet Cuir",
+    "prix": 160.06,
+    "photo": "assets/img/bracelet_2.png",
+    "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bracelets",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 9,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bracelet Argent",
+    "prix": 171.27,
+    "photo": "assets/img/bracelet_3.png",
+    "resume": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bracelets",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 10,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bracelet Argent",
+    "prix": 33.18,
+    "photo": "assets/img/bracelet_4.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelets",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 11,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Créoles Dorées",
+    "prix": 200.87,
+    "photo": "assets/img/boucles_oreilles_5.png",
+    "resume": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 12,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Moderne",
+    "prix": 205.66,
+    "photo": "assets/img/bague_1.png",
+    "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 13,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Pendentif Élégant",
+    "prix": 85.21,
+    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Pendentifs",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 14,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Acier",
+    "prix": 197.58,
+    "photo": "assets/img/bague_2.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 15,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Boucles Perles",
+    "prix": 124.18,
+    "photo": "assets/img/boucles_oreilles_6.png",
+    "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 16,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bracelet Charme",
+    "prix": 98.8,
+    "photo": "assets/img/bracelet_5.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelets",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 17,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Collier Perle",
+    "prix": 57.22,
+    "photo": "assets/img/collier_2.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Colliers",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 18,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bracelet Cuir",
+    "prix": 26.41,
+    "photo": "assets/img/bracelet_6.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bracelets",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 19,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Design",
+    "prix": 133.95,
+    "photo": "assets/img/bague_3.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 20,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Collier Classique",
+    "prix": 74.36,
+    "photo": "assets/img/collier_3.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Colliers",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 21,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Saphir",
+    "prix": 84.55,
+    "photo": "assets/img/bague_4.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 22,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Design",
+    "prix": 93.96,
+    "photo": "assets/img/bague_5.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 23,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Créoles Dorées",
+    "prix": 142.28,
+    "photo": "assets/img/boucles_oreilles_1.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 24,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Acier",
+    "prix": 183.83,
+    "photo": "assets/img/bague_6.png",
+    "resume": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 26,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Vintage",
+    "prix": 66.76,
+    "photo": "assets/img/bague_7.png",
+    "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 27,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Pendantes Cristal",
+    "prix": 97.87,
+    "photo": "assets/img/boucles_oreilles_2.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Boucles d'oreilles",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 28,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Chaine Acier",
+    "prix": 187.3,
+    "photo": "assets/img/chaine_1.png",
+    "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 29,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Collier Classique",
+    "prix": 112.12,
+    "photo": "assets/img/collier_4.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Colliers",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 30,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Moderne",
+    "prix": 27.29,
+    "photo": "assets/img/bague_8.png",
+    "resume": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 31,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Vintage",
+    "prix": 147.01,
+    "photo": "assets/img/bague_9.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 39,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Chaine Vintage",
+    "prix": 98.31,
+    "photo": "assets/img/chaine_2.png",
+    "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 41,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Vintage",
+    "prix": 20.71,
+    "photo": "assets/img/bague_10.png",
+    "resume": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 43,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Collier Élégance",
+    "prix": 112.53,
+    "photo": "assets/img/collier_5.png",
+    "resume": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Colliers",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 44,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Chaine Acier",
+    "prix": 212.84,
+    "photo": "assets/img/chaine_3.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 49,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Chaine Vintage",
+    "prix": 161.62,
+    "photo": "assets/img/chaine_4.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 59,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Chaine Vintage",
+    "prix": 125.12,
+    "photo": "assets/img/chaine_5.png",
+    "resume": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 61,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Chaine Design",
+    "prix": 218.11,
+    "photo": "assets/img/chaine_6.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Chaines homme",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 71,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Bague Élégante",
+    "prix": 124.42,
+    "photo": "assets/img/bague_11.png",
+    "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
+    "categorie": "Bagues",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 74,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Montre Acier",
+    "prix": 59.77,
+    "photo": "assets/img/montre_1.png",
+    "resume": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Montres",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 82,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Montre Élégante",
+    "prix": 146.61,
+    "photo": "assets/img/montre_2.png",
+    "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
+    "categorie": "Montres",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 88,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Montre Vintage",
+    "prix": 35.1,
+    "photo": "assets/img/montre_3.png",
+    "resume": "Un design intemporel qui traverse les modes.",
+    "categorie": "Montres",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 89,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Montre Design",
+    "prix": 66.48,
+    "photo": "assets/img/montre_4.png",
+    "resume": "Alliance parfaite entre tradition et modernité.",
+    "categorie": "Montres",
+    "groupe": "BIJOUX POUR HOMMES",
+    "id": 90,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+  {
+    "nom": "Collier Perle",
+    "prix": 195.66,
+    "photo": "assets/img/collier_6.png",
+    "resume": "Idéal pour offrir ou se faire plaisir.",
+    "categorie": "Colliers",
+    "groupe": "BIJOUX POUR FEMMES",
+    "id": 92,
+    "description": "Votre bijou est réalisé en or 24 carats avec les meilleurs matériaux du monde.",
+    "conseils": "De votre côté, vous pouvez entretenir facilement votre bijou lorsque celui-ci est orné de pierres. Pour cela, il vous suffit de laisser votre bijou tremper dans de l’eau tiède et savonneuse pendant plusieurs heures. Frottez ensuite délicatement vos pierres à l’aide d’une brosse à poils doux. Vous pouvez insister davantage sur l'arrière de la pierre de centre. Enfin, rincez-le à l'eau tiède et essuyez avec un tissu ou une petite chamoisine.Cela permet de retirer les impuretés (poussières, pollution, crème…) qui ont pu se glisser sous les pierres mais également de faire disparaître les petites traces apparentes sur la pierre. En boutique, nous pouvons réaliser ce même nettoyage des pierres en quelques minutes.",
+    "sav": "Que vous les portiez tous les jours ou occasionnellement, les bijoux sont des objets précieux qui demandent une certaine attention. C’est pour cette raison que Glowely vous fait bénéficier d’un service après-vente complet et gracieusement offert à vie. Que ce soit une surprise, un achat à distance ou bien au fil des années, la taille choisie peut ne pas ou ne plus correspondre. Ainsi, nous vous offrons jusqu’à trois mises à taille dans le temps, ne pouvant excéder trois numéros de différences. Veillez toutefois à limiter au maximum ce service, car cela peut fragiliser votre bijou. Le service après-vente comprend également le nettoyage de vos bijoux, à savoir le polissage permettant d’estomper les micro-rayures et de redonner brillance au métal, ainsi que le rhodiage pour blanchir les bijoux en or blanc. Ce service est conseillé tous les 3 ans. Nous offrons également la gravure intérieure dans la typographie de votre choix et la vérification du sertissage de vos pierres à faire tous les ans. "
+  },
+]
+
+
+
+
+
+
