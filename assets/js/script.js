@@ -93,16 +93,20 @@ const url = new URL(window.location)  // https://developer.mozilla.org/en-US/doc
 console.log(url)
 
 // Si page produit, récupère l'id et remplit la page
-if (url.pathname === '/produit.html') {
+if (url.pathname.endsWith('produit.html')) {
     const articleId = url.searchParams.get('id')  // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
     console.log(url.pathname, `id=${articleId}`)
     remplirPageProduit(articleId)
 }
 
 // Si page homme ou femme, remplit la page avec les articles associés
-else if (url.pathname === '/femme.html' || url.pathname === '/homme.html') {
+else if (url.pathname.endsWith('femme.html') || url.pathname.endsWith('homme.html')) {
     console.log(url.pathname)
     remplirPageArticles()
+}
+
+else {
+    console.log(url.pathname)
 }
 
 
