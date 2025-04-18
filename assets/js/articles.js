@@ -158,7 +158,7 @@ const articles = [
   {
     "nom": "Pendentif Élégant",
     "prix": 85.21,
-    "photo": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+    "photo": "assets/img/pendentif_5.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Pendentifs",
     "groupe": "BIJOUX POUR HOMMES",
