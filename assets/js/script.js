@@ -3,6 +3,10 @@ function toggleMenu() {  // Affiche/masque la barre de navigation en mode mobile
     headerNav.classList.toggle('visible')
 }
 
+function toggleDarkMode() {
+    document.documentElement.classList.toggle('dark')
+}
+
 function remplirPageArticles() {  // HOMMES et FEMMES
     const main = document.querySelector('main')
 
