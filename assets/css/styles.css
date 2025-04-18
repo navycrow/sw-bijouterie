@@ -49,7 +49,7 @@ body {
 /* Format des ancres */
 a {
     text-decoration: none;
-    color: black
+    color: var(--body-txt-color)
 }
 
 /* Format titre principal */
@@ -280,6 +280,10 @@ footer {
 }
 
 /* Sections articles */
+.articles {
+    padding: 10px;
+}
+
 .articles h2 {
     text-align: center;
 }
@@ -289,7 +293,7 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 50px;
-    border: solid 1px black;
+    border: solid 1px var(--body-txt-color);
     padding: 10px;
 }
 

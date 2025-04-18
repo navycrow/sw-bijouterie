@@ -3,8 +3,11 @@ function toggleMenu() {  // Affiche/masque la barre de navigation en mode mobile
     headerNav.classList.toggle('visible')
 }
 
-function toggleDarkMode() {
-    document.documentElement.classList.toggle('dark')
+function toggleDarkMode() {  // Switch entre le mode dark ou light
+    const darkMode = document.documentElement.classList.toggle('dark')
+    console.log(darkMode)
+    localStorage.setItem('dark-mode', darkMode) /* enregistre le mode dans le localstorage */
+    console.log(localStorage)
 }
 
 function remplirPageArticles() {  // HOMMES et FEMMES
@@ -79,6 +82,11 @@ function ajouterPanier(id) {
 }
 
 // ============================================================================
+// Récupération de la valeur du dark mode dans le localstorage
+console.log(localStorage)
+if (localStorage.getItem('dark-mode') === 'true') {  /* booléen stocké sous forme de chaine */
+    document.documentElement.classList.add('dark')
+}
 
 // Récupération de l'url de la page courante
 const url = new URL(window.location)  // https://developer.mozilla.org/en-US/docs/Web/API/URL_API
