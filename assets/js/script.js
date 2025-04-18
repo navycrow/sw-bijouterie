@@ -34,8 +34,8 @@ function remplirPageArticles() {  // HOMMES et FEMMES
             div.innerHTML += `
             <a href="produit.html?id=${article.id}">
                 <img src="${article.photo}" alt="${article.nom}" />
-                <p>${article.nom} €</p>
-                <p>${article.prix} €</p>
+                <p>${article.nom}</p>
+                <p><strong>${article.prix.toFixed(2)} €</strong></p>
             </a>`
         })
     })
@@ -49,13 +49,13 @@ function remplirPageProduit(id) {
 
     const sectionArticle = document.getElementById('article')
     sectionArticle.innerHTML = `
-        <div id="article-img">
-            <img  src="${article.photo}" alt="${article.alt}" />
+        <div id="article-image">
+            <img src="${article.photo}" alt="${article.alt}" />
         </div>
         <div id="article-desc">
             <a href="javascript:history.back()">RETOUR</a>
             <h2>${article.nom}</h2>
-            <p id="prix">${article.prix} €</p>
+            <p id="prix"><strong>${article.prix.toFixed(2)} €</strong></p>
             <p id="resume">${article.resume}</p>
             <button onclick="ajouterPanier(${id})">AJOUTER AU PANIER</button>
             <section>DESCRIPTION
