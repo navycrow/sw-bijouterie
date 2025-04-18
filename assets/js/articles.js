@@ -2,7 +2,7 @@ const articles = [
   {
     "nom": "Collier Classique",
     "prix": 46.04,
-    "photo": "/assets/img/collier_1.png",
+    "photo": "assets/img/collier_1.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Colliers",
     "groupe": "BIJOUX POUR FEMMES",
@@ -14,7 +14,7 @@ const articles = [
   {
     "nom": "Bracelet Charme",
     "prix": 98.56,
-    "photo": "/assets/img/bracelet_1.png",
+    "photo": "assets/img/bracelet_1.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Bracelets",
     "groupe": "BIJOUX POUR FEMMES",
@@ -26,7 +26,7 @@ const articles = [
   {
     "nom": "Pendentif Vintage",
     "prix": 217.89,
-    "photo": "/assets/img/pendentif_1.png",
+    "photo": "assets/img/pendentif_1.png",
     "resume": "Idéal pour offrir ou se faire plaisir.",
     "categorie": "Pendentifs",
     "groupe": "BIJOUX POUR HOMMES",
@@ -38,7 +38,7 @@ const articles = [
   {
     "nom": "Pendentif tribal",
     "prix": 79.3,
-    "photo": "/assets/img/pendentif_2.png",
+    "photo": "assets/img/pendentif_2.png",
     "resume": "Idéal pour offrir ou se faire plaisir.",
     "categorie": "Pendentifs",
     "groupe": "BIJOUX POUR HOMMES",
@@ -50,7 +50,7 @@ const articles = [
   {
     "nom": "Pendentif argent",
     "prix": 55.61,
-    "photo": "/assets/img/pendentif_3.png",
+    "photo": "assets/img/pendentif_3.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Pendentifs",
     "groupe": "BIJOUX POUR HOMMES",
@@ -62,7 +62,7 @@ const articles = [
   {
     "nom": "Pendentif Design",
     "prix": 165.99,
-    "photo": "/assets/img/pendentif_4.png",
+    "photo": "assets/img/pendentif_4.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Pendentifs",
     "groupe": "BIJOUX POUR HOMMES",
@@ -74,7 +74,7 @@ const articles = [
   {
     "nom": "Pendantes Cristal",
     "prix": 100.42,
-    "photo": "/assets/img/boucles_oreilles_3.png",
+    "photo": "assets/img/boucles_oreilles_3.png",
     "resume": "Alliance parfaite entre tradition et modernité.",
     "categorie": "Boucles d'oreilles",
     "groupe": "BIJOUX POUR FEMMES",
@@ -86,7 +86,7 @@ const articles = [
   {
     "nom": "Pendantes Cristal",
     "prix": 160.73,
-    "photo": "/assets/img/boucles_oreilles_4.png",
+    "photo": "assets/img/boucles_oreilles_4.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Boucles d'oreilles",
     "groupe": "BIJOUX POUR FEMMES",
@@ -98,7 +98,7 @@ const articles = [
   {
     "nom": "Bracelet Cuir",
     "prix": 160.06,
-    "photo": "/assets/img/bracelet_2.png",
+    "photo": "assets/img/bracelet_2.png",
     "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
     "categorie": "Bracelets",
     "groupe": "BIJOUX POUR FEMMES",
@@ -110,7 +110,7 @@ const articles = [
   {
     "nom": "Bracelet Argent",
     "prix": 171.27,
-    "photo": "/assets/img/bracelet_3.png",
+    "photo": "assets/img/bracelet_3.png",
     "resume": "Alliance parfaite entre tradition et modernité.",
     "categorie": "Bracelets",
     "groupe": "BIJOUX POUR FEMMES",
@@ -122,7 +122,7 @@ const articles = [
   {
     "nom": "Bracelet Argent",
     "prix": 33.18,
-    "photo": "/assets/img/bracelet_4.png",
+    "photo": "assets/img/bracelet_4.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Bracelets",
     "groupe": "BIJOUX POUR FEMMES",
@@ -134,7 +134,7 @@ const articles = [
   {
     "nom": "Créoles Dorées",
     "prix": 200.87,
-    "photo": "/assets/img/boucles_oreilles_5.png",
+    "photo": "assets/img/boucles_oreilles_5.png",
     "resume": "Alliance parfaite entre tradition et modernité.",
     "categorie": "Boucles d'oreilles",
     "groupe": "BIJOUX POUR FEMMES",
@@ -146,7 +146,7 @@ const articles = [
   {
     "nom": "Bague Moderne",
     "prix": 205.66,
-    "photo": "/assets/img/bague_1.png",
+    "photo": "assets/img/bague_1.png",
     "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR FEMMES",
@@ -170,7 +170,7 @@ const articles = [
   {
     "nom": "Bague Acier",
     "prix": 197.58,
-    "photo": "/assets/img/bague_2.png",
+    "photo": "assets/img/bague_2.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR HOMMES",
@@ -182,7 +182,7 @@ const articles = [
   {
     "nom": "Boucles Perles",
     "prix": 124.18,
-    "photo": "/assets/img/boucles_oreilles_6.png",
+    "photo": "assets/img/boucles_oreilles_6.png",
     "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
     "categorie": "Boucles d'oreilles",
     "groupe": "BIJOUX POUR FEMMES",
@@ -194,7 +194,7 @@ const articles = [
   {
     "nom": "Bracelet Charme",
     "prix": 98.8,
-    "photo": "/assets/img/bracelet_5.png",
+    "photo": "assets/img/bracelet_5.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Bracelets",
     "groupe": "BIJOUX POUR FEMMES",
@@ -206,7 +206,7 @@ const articles = [
   {
     "nom": "Collier Perle",
     "prix": 57.22,
-    "photo": "/assets/img/collier_2.png",
+    "photo": "assets/img/collier_2.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Colliers",
     "groupe": "BIJOUX POUR FEMMES",
@@ -218,7 +218,7 @@ const articles = [
   {
     "nom": "Bracelet Cuir",
     "prix": 26.41,
-    "photo": "/assets/img/bracelet_6.png",
+    "photo": "assets/img/bracelet_6.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Bracelets",
     "groupe": "BIJOUX POUR FEMMES",
@@ -230,7 +230,7 @@ const articles = [
   {
     "nom": "Bague Design",
     "prix": 133.95,
-    "photo": "/assets/img/bague_3.png",
+    "photo": "assets/img/bague_3.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR HOMMES",
@@ -242,7 +242,7 @@ const articles = [
   {
     "nom": "Collier Classique",
     "prix": 74.36,
-    "photo": "/assets/img/collier_3.png",
+    "photo": "assets/img/collier_3.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Colliers",
     "groupe": "BIJOUX POUR FEMMES",
@@ -254,7 +254,7 @@ const articles = [
   {
     "nom": "Bague Saphir",
     "prix": 84.55,
-    "photo": "/assets/img/bague_4.png",
+    "photo": "assets/img/bague_4.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR FEMMES",
@@ -266,7 +266,7 @@ const articles = [
   {
     "nom": "Bague Design",
     "prix": 93.96,
-    "photo": "/assets/img/bague_5.png",
+    "photo": "assets/img/bague_5.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR HOMMES",
@@ -278,7 +278,7 @@ const articles = [
   {
     "nom": "Créoles Dorées",
     "prix": 142.28,
-    "photo": "/assets/img/boucles_oreilles_1.png",
+    "photo": "assets/img/boucles_oreilles_1.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Boucles d'oreilles",
     "groupe": "BIJOUX POUR FEMMES",
@@ -290,7 +290,7 @@ const articles = [
   {
     "nom": "Bague Acier",
     "prix": 183.83,
-    "photo": "/assets/img/bague_6.png",
+    "photo": "assets/img/bague_6.png",
     "resume": "Alliance parfaite entre tradition et modernité.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR HOMMES",
@@ -302,7 +302,7 @@ const articles = [
   {
     "nom": "Bague Vintage",
     "prix": 66.76,
-    "photo": "/assets/img/bague_7.png",
+    "photo": "assets/img/bague_7.png",
     "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR FEMMES",
@@ -314,7 +314,7 @@ const articles = [
   {
     "nom": "Pendantes Cristal",
     "prix": 97.87,
-    "photo": "/assets/img/boucles_oreilles_2.png",
+    "photo": "assets/img/boucles_oreilles_2.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Boucles d'oreilles",
     "groupe": "BIJOUX POUR FEMMES",
@@ -326,7 +326,7 @@ const articles = [
   {
     "nom": "Chaine Acier",
     "prix": 187.3,
-    "photo": "/assets/img/chaine_1.png",
+    "photo": "assets/img/chaine_1.png",
     "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
     "categorie": "Chaines homme",
     "groupe": "BIJOUX POUR HOMMES",
@@ -338,7 +338,7 @@ const articles = [
   {
     "nom": "Collier Classique",
     "prix": 112.12,
-    "photo": "/assets/img/collier_4.png",
+    "photo": "assets/img/collier_4.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Colliers",
     "groupe": "BIJOUX POUR FEMMES",
@@ -350,7 +350,7 @@ const articles = [
   {
     "nom": "Bague Moderne",
     "prix": 27.29,
-    "photo": "/assets/img/bague_8.png",
+    "photo": "assets/img/bague_8.png",
     "resume": "Idéal pour offrir ou se faire plaisir.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR FEMMES",
@@ -362,7 +362,7 @@ const articles = [
   {
     "nom": "Bague Vintage",
     "prix": 147.01,
-    "photo": "/assets/img/bague_9.png",
+    "photo": "assets/img/bague_9.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR FEMMES",
@@ -374,7 +374,7 @@ const articles = [
   {
     "nom": "Chaine Vintage",
     "prix": 98.31,
-    "photo": "/assets/img/chaine_2.png",
+    "photo": "assets/img/chaine_2.png",
     "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
     "categorie": "Chaines homme",
     "groupe": "BIJOUX POUR HOMMES",
@@ -386,7 +386,7 @@ const articles = [
   {
     "nom": "Bague Vintage",
     "prix": 20.71,
-    "photo": "/assets/img/bague_10.png",
+    "photo": "assets/img/bague_10.png",
     "resume": "Alliance parfaite entre tradition et modernité.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR FEMMES",
@@ -398,7 +398,7 @@ const articles = [
   {
     "nom": "Collier Élégance",
     "prix": 112.53,
-    "photo": "/assets/img/collier_5.png",
+    "photo": "assets/img/collier_5.png",
     "resume": "Alliance parfaite entre tradition et modernité.",
     "categorie": "Colliers",
     "groupe": "BIJOUX POUR FEMMES",
@@ -410,7 +410,7 @@ const articles = [
   {
     "nom": "Chaine Acier",
     "prix": 212.84,
-    "photo": "/assets/img/chaine_3.png",
+    "photo": "assets/img/chaine_3.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Chaines homme",
     "groupe": "BIJOUX POUR HOMMES",
@@ -422,7 +422,7 @@ const articles = [
   {
     "nom": "Chaine Vintage",
     "prix": 161.62,
-    "photo": "/assets/img/chaine_4.png",
+    "photo": "assets/img/chaine_4.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Chaines homme",
     "groupe": "BIJOUX POUR HOMMES",
@@ -434,7 +434,7 @@ const articles = [
   {
     "nom": "Chaine Vintage",
     "prix": 125.12,
-    "photo": "/assets/img/chaine_5.png",
+    "photo": "assets/img/chaine_5.png",
     "resume": "Idéal pour offrir ou se faire plaisir.",
     "categorie": "Chaines homme",
     "groupe": "BIJOUX POUR HOMMES",
@@ -446,7 +446,7 @@ const articles = [
   {
     "nom": "Chaine Design",
     "prix": 218.11,
-    "photo": "/assets/img/chaine_6.png",
+    "photo": "assets/img/chaine_6.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Chaines homme",
     "groupe": "BIJOUX POUR HOMMES",
@@ -458,7 +458,7 @@ const articles = [
   {
     "nom": "Bague Élégante",
     "prix": 124.42,
-    "photo": "/assets/img/bague_11.png",
+    "photo": "assets/img/bague_11.png",
     "resume": "Conçu avec des matériaux de qualité pour une élégance durable.",
     "categorie": "Bagues",
     "groupe": "BIJOUX POUR HOMMES",
@@ -470,7 +470,7 @@ const articles = [
   {
     "nom": "Montre Acier",
     "prix": 59.77,
-    "photo": "/assets/img/montre_1.png",
+    "photo": "assets/img/montre_1.png",
     "resume": "Alliance parfaite entre tradition et modernité.",
     "categorie": "Montres",
     "groupe": "BIJOUX POUR HOMMES",
@@ -482,7 +482,7 @@ const articles = [
   {
     "nom": "Montre Élégante",
     "prix": 146.61,
-    "photo": "/assets/img/montre_2.png",
+    "photo": "assets/img/montre_2.png",
     "resume": "Un bijou raffiné pour sublimer toutes vos tenues.",
     "categorie": "Montres",
     "groupe": "BIJOUX POUR HOMMES",
@@ -494,7 +494,7 @@ const articles = [
   {
     "nom": "Montre Vintage",
     "prix": 35.1,
-    "photo": "/assets/img/montre_3.png",
+    "photo": "assets/img/montre_3.png",
     "resume": "Un design intemporel qui traverse les modes.",
     "categorie": "Montres",
     "groupe": "BIJOUX POUR HOMMES",
@@ -506,7 +506,7 @@ const articles = [
   {
     "nom": "Montre Design",
     "prix": 66.48,
-    "photo": "/assets/img/montre_4.png",
+    "photo": "assets/img/montre_4.png",
     "resume": "Alliance parfaite entre tradition et modernité.",
     "categorie": "Montres",
     "groupe": "BIJOUX POUR HOMMES",
@@ -518,7 +518,7 @@ const articles = [
   {
     "nom": "Collier Perle",
     "prix": 195.66,
-    "photo": "/assets/img/collier_6.png",
+    "photo": "assets/img/collier_6.png",
     "resume": "Idéal pour offrir ou se faire plaisir.",
     "categorie": "Colliers",
     "groupe": "BIJOUX POUR FEMMES",
