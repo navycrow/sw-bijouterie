@@ -573,7 +573,10 @@ const articles = [
     },
 ]
 
+const articlesFemmes = articles.filter(article => article.groupe === 'BIJOUX POUR FEMMES')
+const articlesHommes = articles.filter(article => article.groupe === 'BIJOUX POUR HOMMES')
 
+console.log(articles, articlesFemmes, articlesHommes);
 
 
 

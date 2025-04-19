@@ -10,6 +10,34 @@ function toggleDarkMode() {  // Switch entre le mode dark ou light
     console.log(localStorage)
 }
 
+function ajouterSectionArticles(parent, titre, articles) {
+    // Creation d'une section avec un titre et une div
+    const section = document.createElement('section')
+    section.classList.add('articles')
+    section.innerHTML = `
+        <h2>${titre}</h2>
+        <div></div>
+    `
+
+    // Ajout des fiches articles
+    const div = section.querySelector('div')
+    articles.forEach(article => {
+        div.innerHTML += `
+            <a href="produit.html?id=${article.id}">
+            <img src="${article.photo}" alt="${article.alt}" />
+            <p>${article.nom}</p>
+            <p><strong>${article.prix.toFixed(2)} €</strong></p>
+            </a>
+        `
+    })
+
+    // Ajout de la section dans le parent
+    parent.appendChild(section)
+}
+
+
+
+
 function remplirPageArticles() {  // HOMMES et FEMMES
     const main = document.querySelector('main')
 
@@ -21,30 +49,33 @@ function remplirPageArticles() {  // HOMMES et FEMMES
     const articlesGroupe = articles.filter(article => article.groupe === groupe)
     console.log(articlesGroupe)
 
-    // Récupère les catégories de la page
-    let categoriesPage = articlesGroupe.map(article => article.categorie)
-    categoriesPage = categoriesPage.filter((categorie, i) => categoriesPage.indexOf(categorie) === i); /* Rend chaque catégorie unique */
-    console.log(categoriesPage)
+    // Récupère toutes les catégories du groupe
+    let categoriesGroupe = articlesGroupe.map(article => article.categorie)
+    categoriesGroupe = categoriesGroupe.filter((categorie, i) => categoriesGroupe.indexOf(categorie) === i); /* Rend chaque catégorie unique */
+    console.log(categoriesGroupe)
 
-    // Pour chaque catégorie de la page
-    categoriesPage.forEach(categorie => {
-        // Ajout d'une section avec un titre et une div
-        const section = document.createElement('section')
-        section.classList.add('articles')
-        section.innerHTML = `<h2>${categorie}</h2>
-    <div></div>`
-        main.appendChild(section)
+    // Pour chaque catégorie de la page, ajoute la section correspondante
+    categoriesGroupe.forEach(categorie => {
+        const selectionArticles = articlesGroupe.filter(article => article.categorie === categorie)
+        ajouterSectionArticles(main, categorie, selectionArticles)
 
-        // Ajout des articles de la catégorie correspondante à la section dans la div
-        const div = section.querySelector('div')
-        articlesGroupe.filter(article => article.categorie === categorie).forEach(article => {
-            div.innerHTML += `
-            <a href="produit.html?id=${article.id}">
-                <img src="${article.photo}" alt="${article.nom}" />
-                <p>${article.nom}</p>
-                <p><strong>${article.prix.toFixed(2)} €</strong></p>
-            </a>`
-        })
+    //     // Ajout d'une section avec un titre et une div
+    //     const section = document.createElement('section')
+    //     section.classList.add('articles')
+    //     section.innerHTML = `<h2>${categorie}</h2>
+    // <div></div>`
+    //     main.appendChild(section)
+
+    //     // Ajout des articles de la catégorie correspondante à la section dans la div
+    //     const div = section.querySelector('div')
+    //     articlesGroupe.filter(article => article.categorie === categorie).forEach(article => {
+    //         div.innerHTML += `
+    //         <a href="produit.html?id=${article.id}">
+    //             <img src="${article.photo}" alt="${article.nom}" />
+    //             <p>${article.nom}</p>
+    //             <p><strong>${article.prix.toFixed(2)} €</strong></p>
+    //         </a>`
+    //     })
     })
 }
 
