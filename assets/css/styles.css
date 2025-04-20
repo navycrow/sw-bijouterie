@@ -196,7 +196,15 @@ main {
 /* FOOTER */
 footer {
     background-color: var(--footer-bg-color);
+    color: var(--footer-txt-color);
     padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: 2em;
+    padding: auto;
 }
 
 /* ========================================================================= */
@@ -271,7 +279,7 @@ footer {
 
 /* ========================================================================= */
 
-/* PAGE HOMME / FEMME */
+/* PAGE PRODUITS */
 
 /* Bannières */
 #banniere img {
@@ -449,4 +457,37 @@ form {
         "message message message"
         "bouton bouton bouton";
     }
+}
+
+
+/* ======================================================================== */
+
+/* PAGE BOUTIQUES */
+
+.boutiques {
+    margin: 20px;
+    text-align: center;
+    border: solid 1px;
+}
+
+.boutiques div {
+    grid-area: infos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.boutiques img {
+    grid-area: photo;
+    padding: 10px;
+}
+
+@media screen and (min-width: 576px) { /* version desktop */
+    .boutiques {
+        display: grid;
+        grid-template-areas:
+        "infos photo";
+    }
+
 }

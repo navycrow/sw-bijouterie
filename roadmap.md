@@ -5,3 +5,5 @@
 - ajouter une bordure flou sur les images
 - créer une page boutique
 - simuler le panier
+- reorganiser le css en mobile first et @media 
+- ajout infobulles sur les menus
