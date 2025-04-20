@@ -48,13 +48,16 @@ function ajouterSectionArticle(parent, article) {  // Fiche produit
                 <p id="prix"><strong>${article.prix.toFixed(2)} €</strong></p>
                 <p id="resume">${article.resume}</p>
                 <button onclick="ajouterPanier(${article.id})">AJOUTER AU PANIER</button>
-                <section>DESCRIPTION
+                <section>
+                    <h3>DESCRIPTION</h3>
                     <p>${article.description}</p>
                 </section>
-                <section>CONSEILS
+                <section>
+                    <h3>CONSEILS</h3>
                     <p>${article.conseils}</p>
                 </section>
-                <section>SERVICE-APRES-VENTE
+                <section>
+                    <h3>SERVICE-APRES-VENTE</h3>
                     <p>${article.sav}</p>
                 </section>
             </div>
