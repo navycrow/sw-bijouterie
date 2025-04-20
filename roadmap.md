@@ -5,5 +5,5 @@
 
 - simuler le panier
 - reorganiser le css en mobile first et @media
-- ajout infobulles sur les menus
+
 - ajout champs recherche
