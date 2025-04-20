@@ -96,10 +96,13 @@ if (url.pathname.endsWith('produit.html')) {
     console.log(article)
     ajouterSectionArticle(main, article)
     
-    // Ajout des recommandations (même groupe, même catégorie)
+    // Ajout des recommandations (même groupe, même catégorie, différent de l'article affiché)
     const groupe = article.groupe
     const categorie = article.categorie
-    const selection = articles.filter(article => article.groupe === groupe && article.categorie === categorie)
+    const selection = articles.filter(
+        article => article.groupe === groupe &&
+        article.categorie === categorie  &&
+        article.id !== id)
     console.log(selection)
     ajouterSectionArticles(main, 'Vous aimerez aussi', selection)
 }
