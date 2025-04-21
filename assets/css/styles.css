@@ -189,7 +189,32 @@ header search input {
 }
 
 #response ul {
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+#response ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    
+}
+
+#response ul li a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--header-txt-color);
+}
+
+#response ul li img {
+    min-width: 2em;
+    min-height: 2em;
+    width: 4vw;
+    height: 4vw;
+    max-width: 3em;
+    max-height: 3em;
+    object-fit: contain;
 }
 
 /* Barre d'icônes */
