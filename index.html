@@ -7,6 +7,7 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="assets/js/articles.js" defer></script>
     <script src="assets/js/script.js" defer></script>
 </head>
 
@@ -29,8 +30,11 @@
 
         <!-- Zone recherche -->
         <search>
-            <input type="text" name="search" id="" placeholder="Recherche" />
+            <input oninput="rechercherArticles()" type="text" name="search" id="search" placeholder="Recherche" />
             <img src="assets/img/loupe.svg" alt="recherche" />
+            <div id="response">
+                <!-- Résdivtat de la recherche injecté en javascript -->
+            </div>
         </search>
 
         <!-- Actions des icônes à définir -->

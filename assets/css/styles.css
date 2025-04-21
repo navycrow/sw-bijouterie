@@ -175,6 +175,23 @@ header search input {
     border: none;
 }
 
+#response {
+    position: absolute;
+    top: var(--header-height);
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+    margin: 0;
+    width: 100%;
+}
+
+#response p, ul {
+    margin: 5px;
+}
+
+#response ul {
+    padding-left: 20px;
+}
+
 /* Barre d'icônes */
 .header-icons {
     display: flex;

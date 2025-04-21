@@ -12,6 +12,41 @@ function toggleDarkMode() {  // Switch entre le mode dark ou light
 }
 
 
+function rechercherArticles() {
+    // Récupération de l'expression recherchée
+    const expressionRecherchee = document.getElementById('search').value.toLowerCase()
+    console.log(expressionRecherchee)
+
+    // Récupération du champs de réponse
+    const response = document.getElementById('response')
+
+    // Si au moins 3 caractères dans l'expression recherchée
+    if (expressionRecherchee.length >= 3) {
+        // Récupère le résultat de la recherche
+        const articlesTrouves = articles.filter(article =>
+            article.nom.toLowerCase().includes(expressionRecherchee) ||
+            article.resume.toLowerCase().includes(expressionRecherchee)
+        )
+        console.log(articlesTrouves)
+
+        // Indique le nombre de résultats
+        response.innerHTML = `
+        <p>${articlesTrouves.length} résultat(s) trouvé(s) :</p>
+        <ul></ul>
+        `
+
+        // Affiche les résultats dans la liste
+        const ul = response.querySelector('ul')
+        articlesTrouves.forEach(article => ul.innerHTML += `
+            <li>${article.nom}</li>
+            `)
+
+    } else { /* sinon vide la liste */
+        response.innerHTML = ""
+    }
+}
+
+
 function ajouterSectionArticles(parent, titre, articles) {  // Articles par catégorie
     // Creation d'une section avec un titre et une div, ajout au parent
     const section = document.createElement('section')
@@ -98,18 +133,18 @@ if (url.pathname.endsWith('produit.html')) {
 
     // Récupération de l'élément main
     const main = document.querySelector('main')
-  
+
     // Ajout de la fiche article corespondante
     const article = articles.find(article => article.id === id)
     console.log(article)
     ajouterSectionArticle(main, article)
-    
+
     // Ajout des recommandations (même groupe, même catégorie, différent de l'article affiché)
     const groupe = article.groupe
     const categorie = article.categorie
     const selection = articles.filter(article =>
         article.groupe === groupe &&
-        article.categorie === categorie  &&
+        article.categorie === categorie &&
         article.id !== id)
     console.log(selection)
     ajouterSectionArticles(main, 'Vous aimerez aussi', selection)
