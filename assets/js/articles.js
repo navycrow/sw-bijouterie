@@ -638,7 +638,7 @@ const groupes = [
         banniere: "assets/img/banniere-nouveautes.png",
         alt: "banniere",
         titre: "NOUVEAUTES", // les 12 plus récents
-        selection: articles.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0,12),
+        selection: [...articles].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0,12),  // [...articles] crée une copie sinon le tri est fait en place
     },
     {
         id: "cadeaux",
