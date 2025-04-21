@@ -68,10 +68,10 @@ function ajouterSectionArticle(parent, article) {  // Fiche produit
 
 function ajouterBanniere(parent, groupe) { // Titre et bannière de la page
     parent.innerHTML += `
-        <section id="banniere">
+        <div id="banniere">
             <img src="${groupe.banniere}" alt="${groupe.alt}">
             <h1>${groupe.titre}</h1>
-        </section>
+        </div>
     `
 }
 
