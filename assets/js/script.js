@@ -38,7 +38,7 @@ function rechercherArticles() {
         // Affiche les résultats dans la liste
         const ul = response.querySelector('ul')
         articlesTrouves.forEach(article => ul.innerHTML += `
-            <li>${article.nom}</li>
+            <li><a href="produit.html?id=${article.id}">${article.nom}</a></li>
             `)
 
     } else { /* sinon vide la liste */
