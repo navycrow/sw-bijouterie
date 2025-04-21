@@ -190,7 +190,6 @@ footer p {
     text-align: center;
     font-size: 0.75em;
     margin-top: 2em;
-    padding: auto;
 }
 
 
@@ -205,6 +204,10 @@ footer p {
     height: 45vmax;  /* Adapte l'image à 45% de la plus grande des dimensions (largeur/hauteur) */
     color: white;
     padding: 10px;
+}
+
+#nouveautes h2 {
+    font-size: 2em;
 }
 
 #nouveautes p {
