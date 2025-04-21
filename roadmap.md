@@ -4,3 +4,4 @@
 - ajouter une bordure flou sur les images
 - simuler le panier
 - ajout champs recherche
+- recadrer les bannieres nouveautés et cadeaux

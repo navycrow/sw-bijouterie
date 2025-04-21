@@ -42,6 +42,9 @@
 
 /* Corps */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* remplit au minimum toute la hauteur de l'écran (pour la page boutique surtout) */
     margin: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--body-bg-color);
@@ -178,6 +181,13 @@ header search input {
     gap: 10px;
     cursor: pointer;
 }
+
+
+/* MAIN */
+main {
+    flex: 1; /* force le main à prendre toute la place dispo */
+}
+
 
 /* FOOTER */
 footer {
