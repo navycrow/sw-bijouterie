@@ -648,6 +648,13 @@ const groupes = [
         selection: articles.filter(article => article.categorie === 'Bagues' ||
                                               article.categorie === 'Montres'
         )
+    },
+    {
+        id: "saint-valentin",
+        banniere: "assets/img/saint-valentin.png",
+        alt: "banniere",
+        titre: "SAINT-VALENTIN",
+        selection: articles.filter(article => article.categorie === "Boucles d'oreilles")
     }
 ]
 

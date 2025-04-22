@@ -117,6 +117,21 @@ function ajouterBanniere(parent, groupe) { // Titre et bannière de la page
 
 function ajouterPanier(id) {
     alert('Votre article a bien été ajouté') // Message provisoire
+    panier.push(articles.find(article => article.id === id))
+    console.log('panier', panier)
+    localStorage.setItem('panier', JSON.stringify(panier))
+    afficherBadgePanier(panier.length)
+}
+
+function afficherBadgePanier(qty){  // Affiche le badge du panier
+    const badge = document.querySelector('.panier .badge')
+    console.log('badge', badge)
+    if (qty > 0) {
+        badge.textContent = qty
+        badge.classList.remove('hidden')
+    } else {
+        badge.classList.add('hidden')
+    }
 }
 
 // ============================================================================
@@ -126,12 +141,32 @@ if (localStorage.getItem('dark-mode') === 'true') {  /* booléen stocké sous fo
     document.documentElement.classList.add('dark')
 }
 
+// Récupération du panier
+let panier = []
+if (localStorage.getItem('panier')) {
+    panier = JSON.parse(localStorage.getItem('panier'))
+    afficherBadgePanier(panier.length)
+}
+console.log('panier', panier)
+
+
 // Récupération de l'url de la page courante
 const url = new URL(window.location)  // https://developer.mozilla.org/en-US/docs/Web/API/URL_API
 console.log(url)
 
+
+// Si page accueil
+if (url.pathname.endsWith('index.html')) {
+    // Affichage bannière saint-valentin le 14 février
+    const date = new Date()
+    if (date.getMonth() + 1 === 2 && date.getDate() === 14) {
+        const banniere = document.getElementById('saint-valentin')
+        banniere.classList.remove('hidden')
+    } 
+}
+
 // Si page produit
-if (url.pathname.endsWith('produit.html')) {
+else if (url.pathname.endsWith('produit.html')) {
     // Récupère l'id de l'article (le convertit en number car get retourne un string)
     const id = parseInt(url.searchParams.get('id'))  // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
     console.log(url.pathname, `id=${id}`)

@@ -116,6 +116,12 @@ button {
     padding: 20px;
 }
 
+/* Eléments cachés par défaut */
+.hidden {
+    display: none;
+}
+
+
 /* ========================================================================= */
 /* HEADER */
 header {
@@ -224,6 +230,15 @@ header search input {
     cursor: pointer;
 }
 
+.badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 0.5em;
+}
+
+
 
 /* MAIN */
 main {
@@ -248,6 +263,26 @@ footer p {
 /* ========================================================================= */
 /* PAGE ACCUEIL */
 
+/* Section saint-valentin */
+#saint-valentin {
+    background-image: url("../img/saint-valentin.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vmax;  /* Adapte l'image à 45% de la plus grande des dimensions (largeur/hauteur) */
+    color: white;
+    padding: 10px;
+}
+
+#saint-valentin h2 {
+    font-size: 2em;
+}
+
+#saint-valentin .button {
+    color: white;
+    border: solid 1px;
+    padding: 5px;
+}
+
 /* Section nouveautés */
 #nouveautes {
     background-image: url("../img/homme.png");
@@ -262,7 +297,7 @@ footer p {
     font-size: 2em;
 }
 
-#nouveautes p {
+#nouveautes p { /* pour le texte ne masque pas le visage de la photo */
     width: 45%;
 }
 
