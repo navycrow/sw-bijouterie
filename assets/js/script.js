@@ -87,7 +87,7 @@ function ajouterSectionArticle(parent, article) {  // Fiche produit
                 <h2>${article.nom}</h2>
                 <p id="prix"><strong>${article.prix.toFixed(2)} €</strong></p>
                 <p id="resume">${article.resume}</p>
-                <button onclick="ajouterPanier(${article.id})">AJOUTER AU PANIER</button>
+                <button onclick="ajouterAuPanier(${article.id})">AJOUTER AU PANIER</button>
                 <section>
                     <h3>DESCRIPTION</h3>
                     <p>${article.description}</p>
@@ -115,10 +115,15 @@ function ajouterBanniere(parent, groupe) { // Titre et bannière de la page
     `
 }
 
-function ajouterPanier(id) {
-    alert('Votre article a bien été ajouté') // Message provisoire
+function ajouterAuPanier(id) {
     panier.push(articles.find(article => article.id === id))
     console.log('panier', panier)
+    localStorage.setItem('panier', JSON.stringify(panier))
+    afficherBadgePanier(panier.length)
+}
+
+function viderPanier() {
+    panier = []
     localStorage.setItem('panier', JSON.stringify(panier))
     afficherBadgePanier(panier.length)
 }
@@ -136,7 +141,7 @@ function afficherBadgePanier(qty){  // Affiche le badge du panier
 
 // ============================================================================
 // Récupération de la valeur du dark mode dans le localstorage
-console.log(localStorage)
+console.log('localStorage', localStorage)
 if (localStorage.getItem('dark-mode') === 'true') {  /* booléen stocké sous forme de chaine */
     document.documentElement.classList.add('dark')
 }
