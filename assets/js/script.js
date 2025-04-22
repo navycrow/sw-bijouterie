@@ -141,7 +141,7 @@ if (localStorage.getItem('dark-mode') === 'true') {  /* booléen stocké sous fo
     document.documentElement.classList.add('dark')
 }
 
-// Récupération du panier
+// Récupération du panier et du badge
 let panier = []
 if (localStorage.getItem('panier')) {
     panier = JSON.parse(localStorage.getItem('panier'))

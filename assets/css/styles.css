@@ -231,13 +231,14 @@ header search input {
 }
 
 .badge {
+    position: absolute;
     background-color: red;
     color: white;
     border-radius: 50%;
     padding: 2px;
     font-size: 0.5em;
+    margin-left: -1%;
 }
-
 
 
 /* MAIN */
